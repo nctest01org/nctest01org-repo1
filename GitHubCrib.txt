@@ -1,0 +1,90 @@
+https://github.com/
+
+Adding SSH Keys
+---------------
+Main dashboard
+Top r.hand corner, Profile Icon
+Dropdown - Settings
+SSH and GPG keys
+Generate (cygwin)
+
+Adding Repositories
+-------------------
+Main dashboard
+Top r.hand corner, Profile Icon
+Dropdown - Settings
+Repositories
++ sign on top r.hand corner
+
+Securing Repositories - LOOK AT THIS 
+---------------------
+Main dashboard
+Top r.hand corner, Profile Icon
+Dropdown - Settings
+Repositories
+Click on relevant Repository
+
+- Code/Pull requests
+- Issues
+- Pull requests
+- Projects (organise work/Issues)
+- Wiki pages
+- Insights (analysis of commits)
+- SETTINGS (for this repo)
+	Options (permissions - on/off)
+		Rename
+		Features - permit users to update Wiki for repo
+		Restrict editing to contributors only
+		Issues	- use Issue tracking
+		Projects - use Project organiser
+		
+		Data Services
+			WHAT IS THIS?
+
+		Merge Button
+			Allow Merge Commits	Add all commits from the head branch to the base branch with a merge commit.
+			Allow squash merging	Combine all commits from the head branch into a single commit in the base branch.
+			Allow rebase merging 	Add all commits from the head branch onto the base branch individually.
+	
+		Temporary interaction limits (24 hours)
+			Limit to existing users
+			Limit to prior contributors 
+			Limit to repository collaborators 
+
+
+		GitHub Pages
+			Web site for ALL repos, one per account/organisation
+
+		Danger Zone
+			Private repo
+			Transfer ownership
+			Archive
+			Delete
+
+	Collaborators (add users)
+		Add users here		<== add a dummy here
+
+
+	Branches
+		Set Default Branch for pull/merge requests (usually master)
+
+		Protect Branches (Branch must have been created and pushed first)
+			Protect this branch  				Disables force-pushes to this branch and prevents it from being deleted. 
+			Require pull request reviews before merging  	all commits must be made to a non-protected branch and submitted via a pull request with at least one approved review and no changes requested before it can be merged into REL01
+				Dismiss stale pull request approvals when new commits are pushed 
+				Require review from Code Owners 
+			Require status checks to pass before merging 
+			Include administrators  			Enforce all configured restrictions for administrators. 	
+
+	Webhooks
+		Webhooks allow external services to be notified when certain events happen. 
+		Needed to push notifications such a commit to something like Jenkins
+
+	Integrations and services e.g. Jenkins 
+		It will send a request to your Jenkins instance telling it about the  repositories and branches that changed. Jenkins will then poll the repository
+ 		and build if needed. 
+
+	Deploy Key
+		A deploy key is an SSH key that is stored on your server and grants access to a single GitHub repository. They are often used to clone repositories during deploys or continuous integration runs
+
+		
